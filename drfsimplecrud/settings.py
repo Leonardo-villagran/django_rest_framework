@@ -50,11 +50,13 @@ INSTALLED_APPS = [
     'corsheaders'
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", 
-    "http://localhost:3001",# Add the domains that should be allowed to make requests
-    # ...
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000", 
+#     "http://localhost:3001",
+#     "https://django-rest-framework-qufj.onrender.com",# Add the domains that should be allowed to make requests
+#     # ...
+# ]
+CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
